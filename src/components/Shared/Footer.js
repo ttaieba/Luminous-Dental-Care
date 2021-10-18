@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className=" mt-5">
 
-            <Row xs={1} lg={4} className="g-4 bg-success p-5 text-start">
+            <Row xs={1} lg={4} className="g-4 topbar p-5 text-start text-light">
 
                 <Col>
                     <>

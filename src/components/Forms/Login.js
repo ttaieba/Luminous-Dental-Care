@@ -1,13 +1,13 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 import img from '../../img/contact.png'
 
 
 
 const Login = () => {
-    const { signInUingGoogle } = useFirebase()
+    const { signInUingGoogle } = useAuth()
     return (
         <div >
             <h1>Make <span className="text-primary fw-bold">appointment</span>  We <br />

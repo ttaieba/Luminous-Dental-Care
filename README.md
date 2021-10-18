@@ -19,9 +19,10 @@ You will also see any lint errors in the console.
 
 ## Learn More
 
-You can learn more 
+You can learn more about the site 
 
-### Code Splitting
+# Code source
+to get the code link visit the private github link
 
 
 # Deployment

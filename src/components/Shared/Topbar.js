@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
+
 
 const Topbar = () => {
-    const { user, logout } = useFirebase()
+    const { user, logout } = useAuth()
     return (
         <div>
 
@@ -14,9 +15,21 @@ const Topbar = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
 
+
                         <Nav.Link as={Link} className="text-white" to="/home#home">Home</Nav.Link>
+
+                        <Nav.Link as={Link} className="text-white" to="/details">Details</Nav.Link>
+
+
+                        <Nav.Link as={Link} className="text-white" to="/doctors">Our Doctors</Nav.Link>
+
+
+
+
+
                         <Nav.Link as={Link} className="text-white" to="/home#services">Services</Nav.Link>
-                        <Nav.Link as={Link} className="text-white" to="/home#blog"> Blog</Nav.Link>
+
+                        <Nav.Link as={Link} className="text-white" to="/blogs"> Blogs</Nav.Link>
 
 
                         {user?.email ? <Button onClick={logout} className="me-3" variant="light">Logout</Button>
