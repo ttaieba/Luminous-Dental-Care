@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "email": "genterle0@i2i.jp",
+        "name": "Wisdom Teeth Removal.",
+        "fee": 590,
+        "des": "The Dental Section provides dental consultation, oral examinations, preventive, promotive, curative and restorative dentistry.",
+        "img": "https://image.freepik.com/free-photo/blonde-woman-shows-toothache-standing-dentist-office_8353-1659.jpg"
+    },
+    {
+        "id": "2",
+        "email": "genterle0@i2i.jp",
+        "name": "Teeth Cleaning.",
+        "fee": 400,
+        "des": "They complete an average of 25 root canal treatments a week, while general dentists typically do two.",
+        "img": "https://image.freepik.com/free-photo/little-beautiful-girl-dentist-smiling_158595-7736.jpg"
+    },
+    {
+        "id": "3",
+        "email": "genterle0@i2i.jp",
+        "name": "Dental Implants",
+        "fee": 250,
+        "des": "We're here to help you overcome the barriers in the way to a healthier.curative and restorative dentistry.",
+        "img": "https://image.freepik.com/free-photo/shaken-steel-human-dentistry-retro_1303-473.jpg"
+    },
+    {
+        "id": "5",
+        "email": "genterle0@i2i.jp",
+        "name": "Root Canal Treatment ",
+        "fee": 500,
+        "des": "Endodontists don't place fillings or clean teeth — they dedicate their time to diagnosing and treating tooth pain.",
+        "img": "https://image.freepik.com/free-photo/dentist-discussing-with-patient-x-ray-report_107420-65664.jpg"
+    },
+    {
+        "id": "19",
+        "email": "genterle0@i2i.jp",
+        "name": "Straighten Teeth",
+        "fee": 480,
+        "des": "People are most productive when they wake up, and setting up a routinecurative and restorative dentistry..",
+        "img": "https://image.freepik.com/free-photo/little-boy-patient-dentist_1303-24383.jpg"
+    },
+    {
+        "id": "5",
+        "email": "genterle0@i2i.jp",
+        "name": "Fillings and Restorations.",
+        "fee": 350,
+        "des": "Endodontists don't place fillings or clean teeth — they dedicate their time to diagnosing and treating tooth pain",
+        "img": "https://image.freepik.com/free-photo/female-dentist-treating-her-patient-teeth_8353-1661.jpg"
+    }
+]
