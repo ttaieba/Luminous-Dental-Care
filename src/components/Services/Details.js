@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 
 
 import {
@@ -35,26 +35,27 @@ const Details = () => {
         <div className="text-start">
             <h1 className="text-primary" > Our service details </h1>
             <Container>
-                <Row md={2} xs={12}  >
-                    <Col className="bg-secondary typo">
-                        <Card className="py-4 bg-light">
-                            <Card.Img className="pic" variant="top" src={singldetails?.img} />
-                            <Card.Body className="">
-                                <Card.Title>{singldetails?.name}</Card.Title>
-                                <h4> ${singldetails?.fee}</h4>
-                                <Card.Text>
-                                    {singldetails?.des}
-                                </Card.Text>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={singldetails?.img} />
+                    <Card.Body>
+                        <Card.Title>{singldetails?.name}</Card.Title>
+                        <h4> ${singldetails?.fee}</h4>
+                        <Card.Text>
+                            {singldetails?.des}
+                        </Card.Text>
 
-                                <Link to="/home"><button className="btn-warning px-4">Go back</button> </Link>
-                            </Card.Body>
+                        <Link to="/home"><button className="btn-warning px-4">Go back</button> </Link>
 
-                        </Card>
-                    </Col>
-                </Row>
+
+                    </Card.Body>
+                </Card>
             </Container>
-        </div>
+        </div >
     );
 };
 
 export default Details;
+
+
+
+

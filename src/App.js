@@ -18,6 +18,7 @@ import Details from "./components/Services/Details";
 import Services from "./components/Services/Services";
 import Footer from "./components/Shared/Footer";
 import Topbar from "./components/Shared/Topbar";
+import Testimonial from "./components/Testimonial/Testimonial";
 import AuthProvider from "./Context/AuthProvider";
 
 // links end-------------------------------/
@@ -53,6 +54,10 @@ function App() {
               <Blogs></Blogs>
             </Route>
 
+            <Route path="/testimonial">
+              <Testimonial></Testimonial>
+            </Route>
+
 
             <PrivateRoute path="/doctors">
               <Doctors></Doctors>
@@ -61,6 +66,8 @@ function App() {
             <PrivateRoute exact path="/details/:detailsId">
               <Details></Details>
             </PrivateRoute>
+
+
 
             <Route path="/register">
               <Register></Register>

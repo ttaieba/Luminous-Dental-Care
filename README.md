@@ -17,9 +17,13 @@ You will also see any lint errors in the console.
 
 
 
-## Learn More
+# Learn More
 
-You can learn more about the site 
+What are use for make this site?
+#react app
+*React Bootstraps for scc framework
+#Fontwasome for icon library
+#font family Monserrat 
 
 # Code source
 to get the code link visit the private github link

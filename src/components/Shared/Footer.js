@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import img from '../../img/award1.png'
 
+
 const Footer = () => {
     return (
         <div className=" mt-5">
@@ -13,6 +14,7 @@ const Footer = () => {
                         <h3>Luminous Dental care</h3>
 
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint officia, atque distinctio deserunt maxime impedit quod neque omnis? Voluptates ratione tempore, voluptas animi ipsa placeat voluptatum blanditiis velit nobis laudantium.</p>
+
                     </>
                 </Col>
                 <Col>

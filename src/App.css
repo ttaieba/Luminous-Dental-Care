@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 .App {
   text-align: center;
 }
@@ -8,15 +15,17 @@
   
 }
 
-.pic{
-  border: 2px dotted white;
- 
-}
+
 .pic:hover{
   border: 2px dotted yellow;
   border-radius: 10px;
   transition: .5s;
   
+}
+.testymoni-bg{
+  background-color: rgb(204, 220, 233);
+  padding: 15px;
+  border-radius: 10px;
 }
 
 
@@ -25,6 +34,9 @@
   width: 80px;
 
 }
-.card-style{
-  margin: 50% auto;
+input{
+  border:none ;
+  border-bottom: 1px solid rgb(114, 112, 112);
+  width: 500px;
+  margin-right: 10px;
 }

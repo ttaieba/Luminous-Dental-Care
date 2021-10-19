@@ -16,10 +16,10 @@ const Header = () => {
                     />
                     <Carousel.Caption>
                         <h1 className="text-dark ">
-                            Our hospital always <br />
-                            Provides high quality <br />
-                            <span className="text-primary fw-bold">Dental
-                            </span> services</h1>
+                            Our hospital always
+                            Provides high quality </h1>
+                        <h3 className="text-primary fw-bold">Dental services
+                        </h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
