@@ -8,11 +8,23 @@
   
 }
 
-.banner{
-  background-color: #20c997;;
+.pic{
+  border: 2px dotted white;
+  border-radius: 50%;
 }
+.pic:hover{
+  border: 2px dotted yellow;
+  border-radius: 10px;
+  transition: .5s;
+  
+}
+
+
 
 .wave{
   width: 80px;
 
+}
+.card-style{
+  margin: 50% auto;
 }

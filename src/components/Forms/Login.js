@@ -7,7 +7,7 @@ import img from '../../img/contact.png'
 
 
 const Login = () => {
-    const { signInUingGoogle } = useAuth()
+    const { signInUingGoogle, handleLogin, handleEmail, handlePassword } = useAuth()
     return (
         <div >
             <h1>Make <span className="text-primary fw-bold">appointment</span>  We <br />
@@ -20,17 +20,33 @@ const Login = () => {
                     <Col className="bg-c p-4 " xs={12} md={6}>
 
                         <h1 className="text-success p-4">Please Login</h1>
-                        <input type="email" placeholder="email " name="" id="" />
-                        <br />
-                        <br />
-                        <input type="password" placeholder="password" name="" id="" />
-                        <br /><br />
+                        <form onSubmit={handleLogin}
+
+                        >
+                            <input onChange={handleEmail}
+                                type="email"
+                                placeholder="email "
+                                name=""
+                                id="" />
+                            <br />
+                            <br />
+                            <input
+                                onChange={handlePassword}
+                                type="password"
+                                placeholder="password"
+                                name=""
+                                id="" />
+                            <br /><br />
+                            <button type="submit" className="px-4 m-2 btn-success">Log In</button>
+
+                            <br />
+                            <br />
+                            <button onClick={signInUingGoogle} className="btn-warning p-2 ">Log in with Google</button>
+                        </form>
 
 
 
 
-
-                        <button onClick={signInUingGoogle} className="btn-warning p-2 ">Log in with Google</button>
 
                         <br />
 

@@ -1,15 +1,16 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const { name, img, fee, des } = props.service
+    const { id, name, img, fee, des } = props.service
 
 
     return (
         <div>
 
             <Col>
-                <Card>
+                <Card className="py-4">
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
@@ -17,13 +18,15 @@ const Service = (props) => {
                         <Card.Text>
                             {des}
                         </Card.Text>
-                        <button>View deails</button>
+
+
                     </Card.Body>
+                    <Link to={`/details/${id}`}><button className="btn-warning px-5">View Detail</button> </Link>
                 </Card>
             </Col>
 
 
-        </div>
+        </div >
     );
 };
 

@@ -18,7 +18,6 @@ const Topbar = () => {
 
                         <Nav.Link as={Link} className="text-white" to="/home#home">Home</Nav.Link>
 
-                        <Nav.Link as={Link} className="text-white" to="/details">Details</Nav.Link>
 
 
                         <Nav.Link as={Link} className="text-white" to="/doctors">Our Doctors</Nav.Link>
@@ -27,7 +26,7 @@ const Topbar = () => {
 
 
 
-                        <Nav.Link as={Link} className="text-white" to="/home#services">Services</Nav.Link>
+                        <Nav.Link as={Link} className="text-white" to="/services">Services</Nav.Link>
 
                         <Nav.Link as={Link} className="text-white" to="/blogs"> Blogs</Nav.Link>
 
@@ -42,6 +41,7 @@ const Topbar = () => {
 
                         <Navbar.Text>
                             user: <a href="#login">{user.displayName}</a>
+
                         </Navbar.Text>
                     </Navbar.Collapse>
 

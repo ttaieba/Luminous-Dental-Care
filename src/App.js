@@ -6,6 +6,7 @@ import {
 
 } from "react-router-dom";
 import './App.css';
+import About from "./components/About/About";
 import Blogs from "./components/Blogs/Blogs";
 import Doctors from "./components/Doctors/Doctors";
 import Login from "./components/Forms/Login";
@@ -37,17 +38,27 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+
+
+
+            <Route path="/services">
+              <Services></Services>
+            </Route>
 
 
             <Route path="/blogs">
               <Blogs></Blogs>
             </Route>
 
+
             <PrivateRoute path="/doctors">
               <Doctors></Doctors>
             </PrivateRoute>
 
-            <PrivateRoute path="/details">
+            <PrivateRoute exact path="/details/:detailsId">
               <Details></Details>
             </PrivateRoute>
 
@@ -69,7 +80,7 @@ function App() {
         </Router>
       </AuthProvider>
 
-    </div>
+    </div >
   );
 }
 
