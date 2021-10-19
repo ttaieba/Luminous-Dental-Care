@@ -4,7 +4,11 @@ import useAuth from '../../hooks/useAuth';
 
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { user } = useAuth();
+    const { user, isLoading } = useAuth();
+
+    if (isLoading) {
+        return ("pleases wait............")
+    }
 
     return (
         <Route

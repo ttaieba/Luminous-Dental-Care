@@ -10,7 +10,7 @@
 
 .pic{
   border: 2px dotted white;
-  border-radius: 50%;
+ 
 }
 .pic:hover{
   border: 2px dotted yellow;

@@ -9,7 +9,7 @@ initializeAthentication()
 
 const useFirebase = () => {
     const [user, setUser] = useState({})
-
+    const [isLoading, setIsLoading] = useState(true)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [submit, setSubmit] = useState("")
@@ -21,7 +21,7 @@ const useFirebase = () => {
 
 
     const signInUingGoogle = () => {
-
+        setIsLoading(true);
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 console.log(result.user)
@@ -31,6 +31,7 @@ const useFirebase = () => {
             .catch((error) => {
 
                 setError(error.message);
+                setIsLoading(false);
             })
 
     }
@@ -50,7 +51,7 @@ const useFirebase = () => {
     }
 
     const handleLogin = (e) => {
-
+        setIsLoading(true);
         e.preventDefault()
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
@@ -65,9 +66,11 @@ const useFirebase = () => {
                 // const errorCode = error.code;
                 const errorMessage = error.message;
                 setError(errorMessage)
+                setIsLoading(false);
             });
     }
     const handdleSubmit = (e) => {
+        setIsLoading(true)
         e.preventDefault()
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
@@ -79,6 +82,8 @@ const useFirebase = () => {
 
                 const errorMessage = error.message;
                 console.log(errorMessage)
+                setError(errorMessage)
+                setIsLoading(false)
             });
 
     }
@@ -97,19 +102,23 @@ const useFirebase = () => {
                 // User is signed out
                 // ...
             }
+            setIsLoading(false)
         });
     }, [])
 
     const logout = () => {
+        setIsLoading(true)
         signOut(auth)
             .then(() => {
                 setUser({})
             })
+            .finally(() => setIsLoading(false))
 
     }
 
     return {
         user,
+        isLoading,
         signInUingGoogle,
         error,
         handleEmail,
