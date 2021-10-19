@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Service from './Service';
 import img from '../../img/wave2.png'
+// imported sources-------------------------------
 
 const Services = () => {
     const [services, setServices] = useState([])
@@ -12,7 +13,7 @@ const Services = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
-
+    // --------------------------------------------------------
     return (
         <div>
             <Container>
@@ -35,10 +36,6 @@ const Services = () => {
                     }
 
                 </Row>
-
-
-
-
 
 
             </Container>

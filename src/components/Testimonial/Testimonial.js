@@ -4,6 +4,8 @@ import img from '../../img/avatar-1.png'
 import img1 from '../../img/avatar3.png'
 import img2 from '../../img/avatar4.png'
 
+// impoted sources-----------------
+
 const Testimonial = () => {
     return (
         <Container>
@@ -13,21 +15,21 @@ const Testimonial = () => {
                     about our work</h1>
                 <Row className=" ">
 
-                    <Col md={4} className="testymoni-bg" >
+                    <Col md={4} className="testimoni-bg" >
 
                         <img src={img} alt="" />
                         <h5>Nender myles </h5>
 
                         <p className=" "> The excellent Doctors have inspired our daughter to set herself goals and achieve. She has loved her time at Greenville. The strong emphasis on moral and character </p>
                     </Col>
-                    <Col md={4} className="text-center testymoni-bg ">
+                    <Col md={4} className="text-center testimoni-bg ">
 
                         <img src={img1} alt="" />
                         <h5>Cynthia Jefferson</h5>
 
                         <p className=" "> The excellent Doctors have inspired us to set herself goals and achieve. She has loved her time at Greenville. The strong emphasis on moral and character development,</p>
                     </Col>
-                    <Col md={4} className="text-center testymoni-bg ">
+                    <Col md={4} className="text-center testimoni-bg ">
 
                         <img src={img2} alt="" />
                         <h5>Cynthia Jefferson</h5>

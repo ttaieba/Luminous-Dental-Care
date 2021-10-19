@@ -8,3 +8,5 @@ const initializeAthentication = () => {
 }
 
 export default initializeAthentication;
+
+// firebase athentications initializations

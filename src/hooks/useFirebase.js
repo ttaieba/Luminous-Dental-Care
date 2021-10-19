@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { GoogleAuthProvider, getAuth, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
 import initializeAthentication from "../Firebase/Firebase.init";
 
-
+// imported------------------------------------------
 
 initializeAthentication()
 
@@ -12,8 +12,10 @@ const useFirebase = () => {
     const [isLoading, setIsLoading] = useState(true)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    const [submit, setSubmit] = useState("")
     const [error, setError] = useState("")
+
+    // --------------------------Athentication works-------------
+
 
     const auth = getAuth();
 
@@ -22,7 +24,7 @@ const useFirebase = () => {
 
     const signInUingGoogle = () => {
         setIsLoading(true);
-        signInWithPopup(auth, googleProvider)
+        return signInWithPopup(auth, googleProvider)
             .then(result => {
                 console.log(result.user)
                 setUser(result.user)
@@ -35,6 +37,8 @@ const useFirebase = () => {
             })
 
     }
+    // -----------------Googol Athentication--End---------------
+
 
     const handleEmail = (e) => {
         setEmail(e.target.value)
@@ -75,22 +79,20 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
 
-                setSubmit(result.user)
+                setUser(result.user)
 
             })
             .catch((error) => {
 
                 const errorMessage = error.message;
-                console.log(errorMessage)
+                // console.log(errorMessage)
                 setError(errorMessage)
                 setIsLoading(false)
             });
 
     }
 
-
-
-
+    // ------------------Email Athentication---end----------------
 
 
     useEffect(() => {
@@ -106,6 +108,8 @@ const useFirebase = () => {
         });
     }, [])
 
+    // ---------------Loging Obsevation for multiple tabs end--------
+
     const logout = () => {
         setIsLoading(true)
         signOut(auth)
@@ -115,7 +119,7 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false))
 
     }
-
+    // ---------------singout end------------------------------------
     return {
         user,
         isLoading,
@@ -124,7 +128,6 @@ const useFirebase = () => {
         handleEmail,
         handlePassword,
         handleLogin,
-        submit,
         handdleSubmit,
         logout
     }

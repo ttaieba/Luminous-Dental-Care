@@ -3,10 +3,13 @@ import { Carousel } from 'react-bootstrap';
 import img from '../../img/bannar-12-4.jpg'
 import img1 from '../../img/bannar-12.jpg'
 
+// all impored s--------------------------
 
 const Header = () => {
     return (
         <div>
+
+            {/* use carousel 2 imgs */}
             <Carousel>
                 <Carousel.Item>
                     <img

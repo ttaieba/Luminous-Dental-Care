@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
   font-family: 'Montserrat', sans-serif;
@@ -9,30 +10,34 @@ body{
   text-align: center;
 }
 
+/* topbar and footer use it */
 .topbar{
   background-color: #688032;
   ;
   
 }
 
-
+/* use it for single service details */
 .pic:hover{
   border: 2px dotted yellow;
   border-radius: 10px;
   transition: .5s;
   
 }
-.testymoni-bg{
+/* testimonial page style */
+.testimoni-bg{
   background-color: rgb(204, 220, 233);
   padding: 15px;
   border-radius: 10px;
 }
 
 
-
+/* curv picture style */
 .wave{
   width: 80px;
 
+
+  /* all input tag style */
 }
 input{
   border:none ;

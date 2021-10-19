@@ -32,32 +32,39 @@ function App() {
 
         <Router>
           <Topbar></Topbar>
+          {/* ------------------------------ */}
           <Switch>
             <Route exact path="/">
               <Home></Home>
             </Route>
+            {/* ------------------------------- */}
+
             <Route path="/home">
               <Home></Home>
             </Route>
+            {/* ------------------------------- */}
+
             <Route path="/about">
               <About></About>
             </Route>
 
-
+            {/* ---------------------------------- */}
 
             <Route path="/services">
               <Services></Services>
             </Route>
 
-
+            {/* -------------------------------- */}
             <Route path="/blogs">
               <Blogs></Blogs>
             </Route>
+            {/* ----------------------------- */}
 
             <Route path="/testimonial">
               <Testimonial></Testimonial>
             </Route>
 
+            {/* -------------private route------------------ */}
 
             <PrivateRoute path="/doctors">
               <Doctors></Doctors>
@@ -67,7 +74,7 @@ function App() {
               <Details></Details>
             </PrivateRoute>
 
-
+            {/* -----------Loging related--------------- */}
 
             <Route path="/register">
               <Register></Register>
@@ -76,12 +83,12 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-
+            {/* --------------404------------------- */}
             <Route path="*">
               <Notfound></Notfound>
             </Route>
           </Switch>
-
+          {/* ----------------------------------- */}
 
           <Footer></Footer>
         </Router>

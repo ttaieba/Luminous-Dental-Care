@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Container } from 'react-bootstrap';
 
-
 import {
     Link,
     useParams
 } from "react-router-dom";
 
-
+// imported sources-------------------------------
 
 
 
@@ -29,7 +28,7 @@ const Details = () => {
 
     }, [details])
 
-
+    // -----------------------------------------------
 
     return (
         <div className="text-start">

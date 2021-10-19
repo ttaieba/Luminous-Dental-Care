@@ -4,15 +4,19 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import img from '../../img/contact.png'
 
-
+// ------------imported link--------------------
 
 const Login = () => {
+
+
     const { signInUingGoogle, handleLogin, handleEmail, handlePassword } = useAuth()
+
+
+
+
     return (
         <div >
-            <h1>Make <span className="text-primary fw-bold">appointment</span>  We <br />
-                always welcome new <br />
-                patients</h1>
+            <h1 className="pt-4">Make <span className="text-primary fw-bold ">appointment</span></h1>
 
             <Container className="my-5 py-5">
 
@@ -20,6 +24,10 @@ const Login = () => {
                     <Col className="bg-c p-4 " xs={12} md={6}>
 
                         <h1 className="text-success p-4">Please Login</h1>
+
+                        {/* loging form */}
+
+
                         <form onSubmit={handleLogin}
 
                         >
@@ -50,9 +58,9 @@ const Login = () => {
 
                         <br />
 
+                        {/* toggol text you can go registe route by click it */}
 
-
-                        <Link to="/register" className="text-primary my-4">New user? please Register</Link>
+                        <Link to="/register" className="text-primary my-4">New user?please Register</Link>
 
                     </Col>
                     <Col xs={6} md={6}>

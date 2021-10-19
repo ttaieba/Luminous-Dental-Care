@@ -6,14 +6,20 @@ import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBuilding, faUser } from '@fortawesome/free-solid-svg-icons'
 
-
+// imported ---------------------------------------------/
 
 const element = <FontAwesomeIcon icon={faUser} />
+// -----------font awsome------------
 
 const Topbar = () => {
+
     const { user, logout } = useAuth()
+
+    // -----------------------------/
     return (
         <div>
+
+            {/* link to all pages */}
 
             <Navbar className="topbar" variant="dark" sticky="top" collapseOnSelect expand="lg">
                 <Container>
@@ -46,7 +52,7 @@ const Topbar = () => {
                             : <Nav.Link as={Link} className="text-white" to="/login"> Login</Nav.Link>}
 
 
-
+                        {/* display use name */}
 
                         <Navbar.Text>
                             {element} <a href="#login">{user.displayName}</a>
