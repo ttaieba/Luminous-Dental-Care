@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import img from '../../img/contact.png'
 
 // ------------imported link--------------------
 
 const Login = () => {
-
-
     const { signInUingGoogle, handleLogin, handleEmail, handlePassword } = useAuth()
 
+    //  redirect on page after reload------------------/
+
+    const location = useLocation();
+    const history = useHistory()
+    // console.log(location.state?.form)
+    const redirect_url = location.state?.from || "/"
+
+    const googleloginhandle = () => {
+        signInUingGoogle()
+            .then(result => {
+                history.push(redirect_url)
+
+            })
 
 
+    }
 
     return (
         <div >
@@ -49,7 +61,7 @@ const Login = () => {
 
                             <br />
                             <br />
-                            <button onClick={signInUingGoogle} className="btn-warning p-2 ">Log in with Google</button>
+                            <button onClick={googleloginhandle} className="btn-warning p-2 ">Log in with Google</button>
                         </form>
 
 

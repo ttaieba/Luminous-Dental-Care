@@ -23,7 +23,7 @@ const Doctors = () => {
                                 <Card.Title>Dr. Vera Hasson</Card.Title>
 
                                 <Card.Text >
-                                    Cardiology
+                                    Pedodontist or Pediatric Dentist.
 
                                 </Card.Text>
                                 <Button variant="outline-info">Appointment</Button>
@@ -37,7 +37,7 @@ const Doctors = () => {
                                 <Card.Title>Dr.Jeanetty Hoff</Card.Title>
 
                                 <Card.Text>
-                                    Surgery
+                                    General Dentist.
 
                                 </Card.Text>
                                 <Button variant="outline-info">Appointment</Button>
@@ -51,7 +51,7 @@ const Doctors = () => {
                                 <Card.Title>Dr. Philip Balley</Card.Title>
 
                                 <Card.Text >
-                                    Urology
+                                    Oral Pathologist & Oral Surgeon.
                                 </Card.Text>
                                 <Button variant="outline-info">Appointment</Button>
                             </Card.Body>

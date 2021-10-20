@@ -8,7 +8,7 @@ const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
     // ------------------------------------------
 
-    // you should wait few-----------------
+    // you should wait for few-----------------
 
 
     if (isLoading) {
